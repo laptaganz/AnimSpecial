@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+    <head>
+      <title>Anim</title>
+      <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #form-container{
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        input{
+            width: 200px;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+        p {
+            font-size: 20px;
+        }
+      </style>
+    </head>
+
+    <body><center><div id="form-container">
+
+        <p ><br><br><br><br><br><br>
+            Enter password or your voice note</p>
+          
+        <form action ="Home.html" onsubmit="return checker()">
+            <input type="text" id="password" style="font-size: 16px;"/><br><br>
+            <input type="submit" id="submit"style="font-size: 16px;"/> <br><br><br><br><br><br>
+        </form>
+
+        <script>
+            var password= document.getElementById("password")
+            console.log(password)
+            var x= password.value
+     
+        function checker() {
+            var x =password.value;
+            if(x=="Tinu") {
+                return true;
+            }else {
+                alert('Wrong Password')
+                return false;
+            }
+        }
+        </script>   
+
+    </div></center></body>
+</html>
